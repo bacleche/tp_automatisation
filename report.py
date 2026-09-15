@@ -1,5 +1,5 @@
 def generate_report(hostname, ip, connectivity, disk):
-    """Génère le rapport final sous forme de fichier texte."""
+    #On va generer alors notre rapport dans un fichier
     filename = "rapport_systeme.txt"
 
     content = f"""========================================

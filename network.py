@@ -2,7 +2,7 @@ import subprocess
 
 
 def get_ip_address():
-    """Récupère l'adresse IP locale."""
+    #PASSONS PAR LA VERIFICATION DE L'IP
     resultat = subprocess.run(
         ["hostname", "-I"], stdout=subprocess.PIPE, text=True, check=True
     )
@@ -10,7 +10,6 @@ def get_ip_address():
 
 
 def check_connectivity():
-    """Vérifie la connectivité vers une passerelle externe."""
     resultat = subprocess.run(
         ["ping", "-c", "1", "8.8.8.8"],
         stdout=subprocess.PIPE,
